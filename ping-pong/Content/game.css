@@ -1,0 +1,59 @@
+﻿body {
+}
+
+#menu{
+    position:relative;
+    left:30%;
+    display:inline-block;
+    margin-top:100px;
+    margin-bottom:100px;
+}
+.game-btn{
+    width:200px;
+    background-color:black;
+}
+
+#game-body{
+    height:550px;
+    width:700px;
+}
+
+.game-status{
+    margin-top:5%;
+    color:white;
+    font-size:20px;
+
+}
+.player-name{
+    font-size:15px;
+    color:#7a7a7a;
+}
+
+footer{
+    margin-top:300px;
+}
+
+.settings{
+    position:absolute;
+    top:200px;
+    left:50%;
+    padding:15px;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);   
+    font-size:25px;
+}
+
+
+
+canvas {
+    position: absolute;
+    margin: auto;
+    top: 40px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    outline:3px solid black;
+}
+
+

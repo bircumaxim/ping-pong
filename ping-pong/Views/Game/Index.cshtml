@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Content/game.css" rel="stylesheet" />
+<style>
+    footer{
+        display:none;
+    }
+</style>
+
+<div id="game-body">
+    <div id="gameMode" style="display:none">@ViewBag.SinglePlayer</div>
+    
+    <audio id="ballAudio">
+        <source src="~/Content/ball.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="winAudio">
+        <source src="~/Content/applause.mp3" type="audio/mpeg" />
+    </audio>
+    <canvas id="gameCanvas"></canvas>
+</div>
+
+
+
+<script src="~/scripts/jquery-1.10.2.min.js"></script>
+<script src="~/scripts/game.js"></script>

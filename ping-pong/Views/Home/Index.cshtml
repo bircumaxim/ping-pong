@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<link href="~/Content/game.css" rel="stylesheet" />
+
+<div class="row" id="menu">
+    <a href="@Url.Action("Index","Game", new {val = false })" class="game-btn btn btn-primary">Start Game</a>
+    <a href="@Url.Action("Settings","Home")" class="game-btn btn btn-primary">Settings</a>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Pong history</h2>
+        <p>
+            Pong (marketed as PONG) is one of the earliest arcade video games and the very first sports arcade video game.
+            It is a tennis sports game featuring simple two-dimensional graphics. 
+            While other arcade video games such as Computer Space came before it, 
+            Pong was one of the first video games to reach mainstream popularity. 
+        </p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Gameplay</h2>
+        <p>Pong is a two-dimensional sports game that simulates table tennis. 
+        The player controls an in-game paddle by moving it vertically across the left side of the screen,
+         and can compete against either a computer-controlled opponent or another player controlling a second paddle on the opposing side. 
+       </p>
+        <p><a class="btn btn-default" href="https://en.wikipedia.org/wiki/Pong#Gameplay">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Impact and legacy</h2>
+        <p>The Pong arcade games manufactured by Atari were a great success. 
+        The prototype was well received by Andy Capp's Tavern patrons; people came to the bar solely to play the game.
+        Following its release, Pong consistently earned four times more revenue than other coin-operated machines.</p>
+        <p><a class="btn btn-default" href="https://en.wikipedia.org/wiki/Pong#Impact_and_legacy">Learn more &raquo;</a></p>
+    </div>
+</div>

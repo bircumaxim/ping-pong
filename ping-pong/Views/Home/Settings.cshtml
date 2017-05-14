@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.SinglePlayer = false;
+    ViewBag.Title = "Settings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>Settings</h2>
+<link href="~/Content/game.css" rel="stylesheet" />
+
+<div class="settings">
+    @*<label class="radio"><input type="radio" name="optradio" value="true">Single Player</label>
+    <label class="radio"><input type="radio" name="optradio" value="false">Multy Player</label>*@
+    <a href="@Url.Action("Index","Game", new {val = true })" class="game-btn btn btn-primary">Multiplayer mode</a>
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script>
+    $('.game-btn').click(function () {
+        var data = {
+            val: selected = $('input[name=optradio]:checked').val()
+        };
+        $.ajax({
+            type: "POST",
+            url: "settings",
+            data: data,
+        });
+    });
+</script>
